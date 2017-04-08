@@ -1,0 +1,499 @@
+/* FONTS
+font-family: 'Nova Square'
+font-family: 'Inconsolata', sans-serif;
+*/
+
+/* LEGAL
+Site Designed by Yi-Ting Anderson
+Development by William Anderson
+info@indexinteractivellc.com
+*/
+
+/*RESET*************************************************************************************/
+*{margin:0px; padding:0px; border:0px; color:#fff; font-size:13px; font-family:'Nova Square', sans-serif;; font-weight:normal; text-indent:0px; font-style:normal;  text-decoration:none;}
+.clear{clear:both;}
+.clearRight{clear:right;}
+.h160{min-height:160px;}
+.w50{width:50%;}
+::-moz-selection { background:#157ad2; color:#fff; }
+::-webkit-selection { background:#157ad2; color:#fff; }
+::selection { background:#157ad2; color:#fff; }
+
+/*************************/
+/*****GENERAL STYLING*****/
+/*************************/
+/*GENRERAL***************************************************************************************/
+body{background:url("images/space.png") top center repeat-y fixed #000;}
+#content{
+	display:block;
+	width:960px;
+	margin:0px auto;
+}
+/*columns*/
+#navigation{
+	display:block;
+	float:left;
+	width:180px;
+	margin-top:75px;
+	position:fixed;
+	padding:3px 0px;
+	border-top:1px solid #fff;
+	border-bottom:1px solid #fff;
+}
+#pageContent{
+	display:block;
+	float:left;
+	width:640px;
+	padding:0px 30px;
+	margin-left:180px;
+	background:rgba(0,0,0,0.4);
+}
+#twitInfo{
+	display:block;
+	float:left;
+	width:80px;
+	margin-top:75px;
+	margin-left:880px;
+	position:fixed;
+	min-height:300px;
+}
+/*navigation***************************************************************************************/
+#navigation a{
+	display:block;
+	float:left;
+	clear:left;
+	width:100%;
+	font-size:14px;
+	text-indent:12px;
+	line-height:22px;
+	color:#fff;
+}
+#navigation a:first-child{
+	border-top:1px solid #fff;
+	padding-top:5px;
+}
+#navigation a:last-child{
+	border-bottom:1px solid #fff;
+	padding-bottom:5px;
+}
+#navigation a.lessNav{
+	color:#999;
+}
+#navigation a:hover{
+	color:#fcde63;
+	background:url("images/one_yellow_star.png") left center no-repeat;
+}
+#navigation a.lessNav:hover{
+	background:url("images/one_white_star.png") left center no-repeat;
+}
+/*page Content***************************************************************************************/
+#logo{
+	display:block;
+	float:left;
+	margin-bottom:55px;
+}
+.contentBlock{
+	display:block;
+	float:left;
+	margin-bottom:40px;
+}
+.contentBlock.half{
+	width:305px;
+	clear:left;
+}
+.contentBlock.leftPad{
+	margin-left:30px;
+	clear:none;
+}
+h1,h2,h4{
+	display:block;
+	float:left;
+	padding-right:46px;
+	background:url("images/three_yellow_stars.png") right center no-repeat;
+	margin-bottom:20px;
+	font-size:21px;
+	line-height:21px;
+	color:#fcde63;
+}
+h4{
+	color:#fff;
+	background:url("images/three_white_stars.png") right center no-repeat;
+}
+p{
+	display:block;
+	float:left;
+	width:100%;
+	font-size:14px;
+	line-height:22px;
+	font-family: 'Inconsolata', sans-serif;
+}
+p a{
+	font-size:14px;
+	line-height:22px;
+	color:#f469b6;
+	font-family: 'Inconsolata', sans-serif;
+}
+p a:hover{
+	color:#5fa9dd;
+}
+p em{
+	display:block;
+	float:left;
+	width:100%;
+	font-size:14px;
+	line-height:22px;
+	font-family: 'Inconsolata', sans-serif;
+	color:#999;
+}
+a.pdfLink{
+	display:block;
+	float:left;
+	width:141px;
+	height:182px;
+	margin-top:20px;
+	background:#fff;
+}
+a.pdfLink:hover{
+	opacity:0.6;
+}
+a.pdfLink+a.pdfLink{
+	margin-left:20px;
+}
+a.pdfLink img{
+	width:100%;
+}
+.contentBlock img{
+	display:block;
+	clear:left;
+	margin:0px auto;
+}
+.contentBlock img.fullIm{
+	padding-top:50px;
+	padding-bottom:60px;
+}
+.threeCol{
+	display:block;
+	float:left;
+	width:193px;
+	margin-top:20px;
+}
+.threeCol+.threeCol{
+	margin-left:30px;
+}
+.threeCol strong{
+	display:inline-block;
+	color:#3ed6f9;
+	width:100%;
+	font-size:14px;
+}
+/*Dice Roll Section*/
+#die{
+	display:block;
+	float:left;
+	width:303px;
+	height:440px;
+	margin-left:30px;
+	border:1px solid #fff;
+	border-radius:12px;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	-o-border-radius:12px;
+	-ms-border-radius:12px;
+	position:relative;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+#die:hover{
+	background:rgb(76,67,33);
+	background:rgba(252,222,99,0.30);
+	cursor:pointer;
+}
+#die p{
+	display:block;
+	float:left;
+	width:95%;
+	padding-left:5%;
+	margin-top:20px;
+	font-size:16px;
+	line-height:19px;
+}
+#cube{
+	display:block;
+	width:237px;
+	height:207px;
+	background:url("images/cube.png");
+	margin:100px auto 0px auto;
+}
+#face{
+	display:block;
+	float:left;
+	width:170px;
+	height:170px;
+	margin-top:35px;
+	overflow:hidden;
+}
+#face img{
+	display:block;
+	float:left;
+	margin-left:0px;
+}
+#trStars{
+	display:block;
+	position:absolute;
+	top:20px;
+	right:20px;
+	width:82px;
+	height:58px;
+	background:url("images/top_right_corner_stars.png");
+}
+#blStars{
+	display:block;
+	position:absolute;
+	bottom:20px;
+	left:20px;
+	width:70px;
+	height:58px;
+	background:url("images/bottom_left_corner_stars.png");
+}
+#rollValue{
+	display:block;
+	position:absolute;
+	bottom:15px;
+	right:20px;
+	width:110px;
+	height:60px;
+	border:1px solid #fff;
+	text-align:center;
+	line-height:60px;
+	font-size:60px;
+}
+/*end dive section*/
+
+/*stat*/
+.stat{
+	display:block;
+	float:left;
+	width:305px;
+	margin-bottom:30px;
+}
+.stat.leftPad{
+	margin-left:30px;
+	clear:none;
+}
+.stat h3{
+	display:block;
+	float:left;
+	color:#3ed6f9;
+	font-size:17px;
+	line-height:17px;
+	margin-bottom:10px;
+	padding-left:15px;
+	background:url("images/one_blue_star.png") left center no-repeat;
+}
+
+/*alien species*/
+#aliens{
+	display:block;
+	float:left;
+	width:100%;
+	border:1px solid #fff;
+	border-radius:12px;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	-o-border-radius:12px;
+	-ms-border-radius:12px;
+	overflow:hidden;
+	margin-bottom:40px;
+}
+.alien{
+	display:block;
+	float:left;
+	width:100%;
+	border-bottom:1px solid #fff;
+	background:url("images/stroke_top_corner_stars.png") top right no-repeat;
+}
+.alien img{
+	display:block;
+	float:left;
+	margin-left:20px;
+	margin-top:10px;
+}
+.alien h3{
+	display:block;
+	float:left;
+	margin-left:20px;
+	margin-top:40px;
+	color:#3ed6f9;
+	font-size:15px;
+	line-height:14px;
+	margin-bottom:10px;
+	padding-left:15px;
+	background:url("images/one_blue_star.png") left center no-repeat;
+	
+}
+.alien p{
+	width:400px;
+	margin-left:20px;
+}
+
+/*tweets*/
+.tweet{
+	display:block;
+	float:left;
+	width:100%;
+	min-height:33px;
+	padding:23px 0px;
+	background:url("images/twitIcon.png") 15px center no-repeat #fff;
+	margin-bottom:40px;
+}
+.tweet p{
+	color:#020202;
+	width:70%;
+	margin-left:20%;
+	font-family:'Nova Square';
+	font-size:16px;
+}
+
+#cRight{
+	display:block;
+	float:left;
+	width:100%;
+	text-align:center;
+	margin-bottom:120px;
+}
+/*Twitter Column**********************************************************/
+#scrollTop{
+	display:block;
+	float:left;
+	width:102px;
+	height:0px;/*105*/
+	margin-bottom:0px;/*20*/
+	margin-left:-11px;
+	margin-top:-18px;
+	background:url("images/soloLogo.png");
+}
+#scrollTop:hover{
+	opacity:0.5;
+}
+#twitterIcon{
+	display:block;
+	float:left;
+	width:61px;
+	height:61px;
+	margin-left:10px;
+	background:url("images/twitLink.png");
+	border-radius:12px;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	-o-border-radius:12px;
+	-ms-border-radius:12px;
+}
+#twitterIcon:hover{
+	background-color:#5fa9dd;
+}
+/*************************/
+/*****Responsive STYLING*****/
+/*************************/
+@media screen and (max-width: 959px){
+	#content{
+		display:block;
+		width:780px;
+		margin:0px auto;
+	}
+	/*columns*/
+	#navigation{
+		display:none;
+	}
+	#pageContent{
+		margin-left:0px;
+	}
+	#twitInfo{
+		right:5px;
+	}
+	#logo{
+		width:95%;
+	}
+}
+@media screen and (max-width: 770px){
+	#content{
+		width:100%;
+	}
+	#pageContent{
+		float:none;
+		margin:0px auto;
+	}
+	#twitInfo{
+		position:fixed;
+		top:35px;
+		right:0px;
+		background:rgba(0,0,0,0.6);
+		padding:10px;
+		border-radius:12px;
+		min-height:0px;
+	}
+}
+@media screen and (max-width: 769px){
+	body{
+		min-width:480px;
+	}
+	#pageContent{
+		width:90%;
+		overflow:hidden;
+	}
+	.contentBlock.half{
+		width:90%;
+	}
+	.contentBlock.half.leftPad{
+		margin-left:0px;
+	}
+	#die{
+		margin-left:0px;
+		margin-bottom:30px;
+	}
+	.stat{
+		width:100%;
+	}
+	.stat.leftPad{
+		margin-left:0px;
+	}
+	.alien{
+		padding:0px 0px 20px 0px;
+		position:relative;
+	}
+	.alien h3{
+		margin-left:200px;
+	}
+	.alien p{
+		width:40%;
+		margin-left:200px;
+	}
+	.alien img{
+		position:absolute;
+		left:20px;
+		bottom:0px;
+	}
+	.threeCol{
+		width:100%;
+	}
+	.threeCol+.threeCol{
+		margin-left:0px;
+	}
+	#cRight{
+		text-align:left;
+	}
+	/*the dice*/
+	#die{
+		width:90%;
+	}
+	a.pdfLink{
+		width:100%;
+		overflow:hidden;
+	}
+	a.pdfLink+a.pdfLink{
+		margin-left:0px;
+	}
+}
